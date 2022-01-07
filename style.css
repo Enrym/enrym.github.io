@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit';
+    color: #fff;
+}
+
+.card-body {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    height: 600px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 20px 0px 20px hsl(215deg 59% 10%);
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    height: 100%;
+    width:100%;
+    border-radius: 8px; 
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 8px; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    transition: .6s ease;
+    background-color: hsla(178, 100%, 50%, 60%);
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.overlay:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+h2 {
+    font-size: 18px;
+    padding: 25px 0;
+    font-weight: 600;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    font-weight: 100;
+    line-height: 1.5;
+    color:hsl(215, 51%, 70%);
+}
+
+.icons {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.cont p {
+    margin-left: 5px;
+}
+
+.cont-2 img {
+    width: 15px;
+    height: 15px;
+}
+
+.cont-1 img {
+    width: 12px;
+    height: 18px;
+}
+
+.cont-1 p {
+    color: hsl(178, 100%, 50%);
+}
+
+.cont-1, .cont-2 {
+    display:flex;
+    align-items: center;
+}
+
+.creator {
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.creator img {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+
+}
+
+.creator p {
+    font-size: 14px;
+}
+
+.creator p span {
+    color: #fff;
+}
+
+.creator p span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
